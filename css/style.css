@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  D: \program\Dev Challange\portfolio_website-STARTER src: url(https://example.com/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons-round {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  color: color: #4F4F4F;
+  font-weight: 600;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+  background: url("../cool-background.png");
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  color: #828282;
+
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav.navbar {
+  background-color: black;
+  scroll-behavior: smooth;
+  position: sticky;
+  top:0;
+  z-index: 1;
+}
+
+nav div {
+  margin: 0;
+  background-color: inherit;
+}
+
+img {
+  border-radius: 12px;
+  width: 100%;
+}
+
+/* NOTE: bagian profil */
+div, p {
+  background-color: white;
+  border-radius: 12px;
+  margin: 23px 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #B2B1B9;
+}
+
+.profil {
+  width: 100%;
+  padding: 23px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profil img {
+  width: 30%;
+  border-radius: 12px;
+}
+
+.konten-profil {
+  width: 60%;
+}
+
+.email {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  align-items: center;
+  color: #2C2E43;
+}
+
+h2, h3, h4 {
+  color: rgb(44, 46, 67);
+}
+
+h3 {
+  border-left: 2.5px solid #e0aa39;
+  padding-left: 8px;
+  line-height: 29px;
+  font-weight: 600;
+  font-size: 23px;
+  margin-top: 10px;
+}
+
+.project-title h3 {
+  border: none;
+}
+
+/* NOTE: skill */
+.skil {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 23px;
+}
+
+.permeteran {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  align-items: center;
+  grid-gap: 24px;
+}
+
+.parameter {
+  width: 100%;
+  height: 9.6px;
+  background: #C4C4C4;
+  border-radius: 12px;
+  padding: 0;
+}
+
+.biru {
+  background: #2F80ED;
+  border-radius: 12px;
+  height: 9.6px;
+  margin: 0;
+}
+
+.ht {
+  width: 95%;
+}
+
+.css {
+  width: 80%;
+}
+
+.js {
+  width: 75%;
+}
+
+.react {
+  width: 60%;
+}
+
+.project {
+  width: 100%;
+}
+
+.btn {
+  background-color: #05386b;
+  color: #edf5e1;
+}
+
+.row img {
+  width: 100%;
+  height: 100%;
+  object-fit: content;
+}
+
+.sertifikat {
+  padding: 23px;
+}
+
+.hobbies {
+  padding: 23px;
+}
+
+/* NOTE: sistem grid */
+.konten {
+  margin: 0 5%;
+  background-color: inherit;
+  display: grid;
+  grid-gap: 34px;
+  grid-template-areas: "profil profil profil"
+    "skil blog blog"
+    "hobi blog blog"
+    "sertifikat sertifikat sertifikat"
+    "projek projek projek";
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.profil {
+  grid-area: profil;
+}
+
+.blog {
+  grid-area: blog;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.blog div {
+  background-color: inherit;
+}
+
+.hobbies {
+  grid-area: hobi;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.sertifikat {
+  grid-area: sertifikat;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.project {
+  grid-area: projek;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.skil {
+  grid-area: skil;
+}
+
+@media (max-width:720px) {
+  .konten {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: "profil"
+      "skil"
+      "projek"
+      "blog"
+      "sertifikat"
+      "hobi"
+    ;
+    grid-template-columns: 100%;
+  }
+}
+@media (max-width:500px) {
+  .profil{
+    width: 100%;
+    flex-direction: column;
+  }
+  .profil img{
+    width: 100%;
+  }
+  .konten-profil{
+    width: 100%;
+  }
+}
